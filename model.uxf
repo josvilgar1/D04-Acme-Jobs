@@ -406,24 +406,6 @@ Challenges
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>168</x>
-      <y>252</y>
-      <w>154</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Enum&gt;&gt;
-Reward
---
-+ BRONZE
-+ SILVER
-+ GOLD
-
-bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>0</x>
       <y>910</y>
       <w>595</w>

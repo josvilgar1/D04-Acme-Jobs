@@ -11,7 +11,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Employer extends UserRole {
+public class Worker extends UserRole {
 
 	// Serialization identifier -----------------------
 
@@ -20,12 +20,13 @@ public class Employer extends UserRole {
 	//Attributes ---------------------------------------
 
 	@NotBlank
-	private String				company;
+	private String				qualifications;
 
 	@NotBlank
-	private String				sector;
+	private String				skills;
 
 	//Derived attributes --------------------------------
 
 	//Relationships -------------------------------------
+
 }
