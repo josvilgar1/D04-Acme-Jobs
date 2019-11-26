@@ -77,7 +77,34 @@
 		<property name="userAccount" ref="consumerUserAccount" />
 	</bean>
 	
+	<!-- Employer -->
 	
+		<bean name="Employer1UserAccount" class="acme.framework.entities.UserAccount">
+		<property name="username" ref="employer1" />
+		<property name="password" ref="password1" />
+		<property name="enabled" ref="true" />
+		<property name="identity">
+			<bean>
+				<property name="name" value="Employer"/>
+				<property name="surname" value="Employer"/>
+				<property name="email" value="Employer@1.com"/>
+			</bean>		
+		</property>
+		<property name="roles">
+			<list>
+				<ref bean="employer1Employer" />
+				<ref bean="employer1Authenticated" />
+			</list>
+		</property>
+	</bean>
+	
+	<bean name="employer1Employer" class="acme.entities.roles.Employer">
+		<property name="company" value="Employer 1, Inc."
+		<propery name="sector" value="Sector 1"/>
+		<property name="userAccount" ref="empployer1UserAccount"/>
+	</bean>
+	
+	<bean name=""
 	<!-- Banners -->	
 	
 	<bean id="banner01" class="acme.entities.banners.Commercial">

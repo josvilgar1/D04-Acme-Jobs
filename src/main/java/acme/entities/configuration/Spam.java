@@ -26,4 +26,6 @@ public class Spam extends DomainEntity {
 	@NotNull
 	private Double				threshold;
 
+	//Relationships -------------------------------------
+
 }

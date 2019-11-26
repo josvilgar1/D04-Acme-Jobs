@@ -15,5 +15,5 @@ package acme.components;
 import acme.framework.components.Command;
 
 public enum CustomCommand implements Command {
-	LIST_BEST, LIST_ALL_ACTIVE
+	LIST_BEST, LIST_ALL_ACTIVE, LIST_MINE
 }
