@@ -7,6 +7,7 @@ import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -14,6 +15,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import acme.entities.messages.Message;
 import acme.framework.entities.Authenticated;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -46,5 +48,10 @@ public class Messagethread extends DomainEntity {
 	@Valid
 	@ManyToOne(optional = false)
 	private Authenticated				owner;
+
+	@NotNull
+	@Valid
+	@OneToMany(mappedBy = "messageThread")
+	private Collection<Message>			messages;
 
 }
