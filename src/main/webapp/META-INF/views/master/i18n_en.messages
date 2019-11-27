@@ -50,6 +50,7 @@ master.menu.administrator.commercial = Commercial banners
 master.menu.administrator.nonCommercial = Non commercial banners
 
 # master.menu.authenticated ###################################################
+
 master.menu.authenticated = Authenticated
 master.menu.authenticated.companyrecord = Company records
 master.menu.authenticated.offer.active = List Active Offers
@@ -70,6 +71,11 @@ master.menu.provider.request.create = New request
 master.menu.consumer = Consumer
 master.menu.consumer.create = New offer
 
+# master.menu.employer ########################################################
+
+master.menu.employer = Employer
+master.menu.employer.job.list = Publicated jobs
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -78,6 +84,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.become-employer = Become a employer
+master.menu.user-account.employer = Employer
 
 # master.footer ###############################################################
 
