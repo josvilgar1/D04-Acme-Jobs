@@ -70,6 +70,11 @@ master.menu.provider.request.create = New request
 master.menu.consumer = Consumer
 master.menu.consumer.create = New offer
 
+# master.menu.worker ######################################################
+
+master.menu.worker = Worker
+master.menu.worker.aplication.list = Aplicated Jobs
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Account
@@ -78,6 +83,8 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.become-worker = Become a worker
+master.menu.user-account.worker = Worker data
 
 # master.footer ###############################################################
 
