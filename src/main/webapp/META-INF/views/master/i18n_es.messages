@@ -71,10 +71,16 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
+
 # master.menu.worker ######################################################
 
 master.menu.worker = Trabajador
 master.menu.worker.aplication.list = Trabajos aplicados
+
+# master.menu.employer ########################################################
+
+master.menu.employer = Empleado
+master.menu.employer.job.list = Trabajos publicados
 
 # master.menu.user-account ####################################################
 
@@ -86,8 +92,10 @@ master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
 master.menu.user-account.become-worker = Hazte trabajador
 master.menu.user-account.worker = Datos de trabajador
+master.menu.user-account.become-employer = Hazte empleado
+master.menu.user-account.employer = Datos de empleado
 
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa
