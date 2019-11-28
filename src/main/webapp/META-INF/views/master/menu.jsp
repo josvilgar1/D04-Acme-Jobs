@@ -67,7 +67,7 @@
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.worker" access="hasRole('Worker')">
-			<acme:menu-suboption code="master.menu.worker.aplication.list" action="/worker/application/list"/>
+			<acme:menu-suboption code="master.menu.worker.aplication.list" action="/worker/application/list-mine"/>
 		</acme:menu-option>
 		
 	</acme:menu-left>
