@@ -29,7 +29,7 @@ public class AuthenticatedMessageShowService implements AbstractShowService<Auth
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "creationMoment", "title");
+		request.unbind(entity, model, "creationMoment", "title", "tags", "body");
 
 	}
 
