@@ -71,6 +71,12 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list.has.auditrecord = Trabajos con registro de auditoría
+master.menu.auditor.list.not.has.auditrecord = Trabajos sin registro de auditoría
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta

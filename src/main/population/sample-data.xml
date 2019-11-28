@@ -640,9 +640,9 @@
 	
 	<bean id="auditrecord02" class="acme.entities.auditrecords.Auditrecord">
 		<property name="creationMoment" value="2019/11/4 10:00"/>
-		<property name="title" value="title01"/>
+		<property name="title" value="title02"/>
 		<property name="finalMode" value="true"/>
-		<property name="body" value="body01"/>
+		<property name="body" value="body02"/>
 		<property name="auditor" ref="auditor01Auditor"/>
 		<property name="job" ref="job02"/>
 	</bean>
