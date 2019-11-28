@@ -1,5 +1,5 @@
 
-package acme.features.employer;
+package acme.features.employer.job;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
