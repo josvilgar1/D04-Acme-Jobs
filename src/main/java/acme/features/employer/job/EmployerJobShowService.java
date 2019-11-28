@@ -31,7 +31,10 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		jobId = request.getModel().getInteger("id");
 		job = this.repository.findOneJobById(jobId);
 
-		return false;
+		employer = job.getEmployer();
+		principal = request.getPrincipal();
+		result = employer.getUserAccount().getId() == principal.getAccountId();
+		return result;
 	}
 
 	@Override

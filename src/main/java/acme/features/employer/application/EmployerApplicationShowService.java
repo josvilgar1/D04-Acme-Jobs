@@ -24,14 +24,18 @@ public class EmployerApplicationShowService implements AbstractShowService<Emplo
 
 		boolean result;
 		int ApplicationId;
-		Application Application;
+		Application application;
 		Employer employer;
 		Principal principal;
 
 		ApplicationId = request.getModel().getInteger("id");
-		Application = this.repository.findOneApplicationById(ApplicationId);
+		application = this.repository.findOneApplicationById(ApplicationId);
 
-		return false;
+		employer = application.getJob().getEmployer();
+		principal = request.getPrincipal();
+		result = employer.getUserAccount().getId() == principal.getAccountId();
+
+		return result;
 	}
 
 	@Override
@@ -40,8 +44,7 @@ public class EmployerApplicationShowService implements AbstractShowService<Emplo
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "reference", "title", "deadline");
-		request.unbind(entity, model, "salary", "moreInfo", "description", "finalMode");
+		request.unbind(entity, model, "referenceNumber", "creationMoment", "statement", "skills", "qualifications");
 
 	}
 
