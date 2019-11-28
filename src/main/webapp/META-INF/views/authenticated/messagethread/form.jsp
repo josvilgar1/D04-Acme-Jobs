@@ -24,6 +24,6 @@
 <acme:form>
 	<acme:form-submit 
 		method="get" 
-		code="administrator.messagethread.form.button.message" 
+		code="authenticated.messagethread.form.button.message" 
 		action="/authenticated/message/list?id=${id}"/>
 </acme:form>
