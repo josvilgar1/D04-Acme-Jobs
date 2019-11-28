@@ -71,6 +71,12 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor = Patrocinador
+master.menu.sponsor.commercial.list = Anuncios comerciales
+master.menu.sponsor.noncommercial.list = Anuncios no comerciales
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
