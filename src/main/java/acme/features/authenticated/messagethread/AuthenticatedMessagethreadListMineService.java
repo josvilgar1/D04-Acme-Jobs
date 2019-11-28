@@ -14,7 +14,7 @@ import acme.framework.entities.Principal;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class AuthenticatedMessagethreadListService implements AbstractListService<Authenticated, Messagethread> {
+public class AuthenticatedMessagethreadListMineService implements AbstractListService<Authenticated, Messagethread> {
 
 	@Autowired
 	AuthenticatedMessagethreadRepository repository;
@@ -32,7 +32,7 @@ public class AuthenticatedMessagethreadListService implements AbstractListServic
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "creationMoment", "title");
+		request.unbind(entity, model, "creationMoment", "title", "tags", "body");
 
 	}
 

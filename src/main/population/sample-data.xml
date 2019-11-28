@@ -565,12 +565,6 @@
 			</list>
 		</property>
 		<property name="owner" ref="employer01Authenticated"/>
-		<property name="messages">
-			<list>
-				<ref bean="message04"/>
-				<ref bean="message05"/>
-			</list>
-		</property>
 	</bean>
 	
 	<!-- Messagethread01 -->	
@@ -585,13 +579,6 @@
 			</list>
 		</property>
 		<property name="owner" ref="sponsor02Authenticated"/>
-		<property name="messages">
-			<list>
-				<ref bean="message01"/>
-				<ref bean="message02"/>
-				<ref bean="message03"/>
-			</list>
-		</property>
 	</bean>
 	
 	<!-- Message05 -->	

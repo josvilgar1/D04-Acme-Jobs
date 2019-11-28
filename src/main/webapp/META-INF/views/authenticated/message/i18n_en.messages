@@ -8,11 +8,14 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-authenticated.messagethread.list.label.title = Title
-authenticated.messagethread.list.label.creationMoment = Creation Moment
+authenticated.message.list.label.title = Title
+authenticated.message.list.label.creationMoment = Creation Moment
+authenticated.message.list.label.tags = Tags
+authenticated.message.list.label.body = Body
 
-authenticated.messagethread.form.lable.title = Title
-authenticated.messagethread.form.lable.creationMoment = Creation Moment
+authenticated.message.form.lable.title = Title
+authenticated.message.form.lable.creationMoment = Creation Moment
+authenticated.message.form.label.tags = Tags
+authenticated.message.form.label.body = Body
 
-authenticated.messagethread.form.button.return = Return
-authenticated.messagethread.form.button.message = Message
+authenticated.message.form.button.return = Return
