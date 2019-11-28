@@ -4,7 +4,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:list>
-	<acme:list-column code="authenticated.list.job.label.title" path="title" width="80%"/>
-	<acme:list-column code="authenticated.list.job.label.salary" path="salary" width="10%"/>
-	<acme:list-column code="authenticated.list.job.label.deadline"	path="deadline"	width="10%"/>
+	<acme:list-column code="authenticated.job.list.label.title" path="title" width="20%"/>
+	<acme:list-column code="authenticated.job.list.label.description"	path="description"	width="30%"/>
+	<acme:list-column code="authenticated.job.list.label.salary" path="salary" width="20%"/>
+	<acme:list-column code="authenticated.job.list.label.deadline"	path="deadline"	width="20%"/>
 </acme:list>

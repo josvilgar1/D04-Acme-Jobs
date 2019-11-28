@@ -58,6 +58,7 @@ master.menu.authenticated.announcement = List announcements
 master.menu.authenticated.challenge.active = List active challenges
 master.menu.authenticated.request.active = List active requests
 master.menu.authenticated.investorrecords = List investor records
+master.menu.authenticated.job.active = List active jobs
 
 # master.menu.provider ########################################################
 
