@@ -32,5 +32,8 @@ public class Dashboard implements Serializable {
 	List<String>				sectorsbyCompany;
 	List<Integer>				numSectorbyInvestor;
 	List<String>				sectorsbyInvestor;
+	Double						avgJobPerEmployer;
+	Double						avgApplicationPerEmployer;
+	Double						avgApplicationPerWorker;
 	//Object[]					InvestorsSectors;
 }

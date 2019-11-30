@@ -71,7 +71,6 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
-
 # master.menu.worker ######################################################
 
 master.menu.worker = Trabajador
@@ -82,6 +81,12 @@ master.menu.worker.aplication.list = Trabajos aplicados
 master.menu.employer = Empleado
 master.menu.employer.job.list = Trabajos publicados
 master.menu.employer.application.list = Solicitudes a mis trabajos
+
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list.has.auditrecord = Trabajos con registro de auditoría
+master.menu.auditor.list.not.has.auditrecord = Trabajos sin registro de auditoría
 
 # master.menu.user-account ####################################################
 
