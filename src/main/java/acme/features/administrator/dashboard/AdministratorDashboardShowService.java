@@ -33,15 +33,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords");
+    request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords");
 		request.unbind(entity, model, "minActiveRequest", "maxActiveRequest", "avgActiveRequest", "stDerivationActiveRequest");
 		request.unbind(entity, model, "minRangeMinActiveOffer", "maxRangeMinActiveOffer", "avgRangeMinActiveOffer", "stDerivationRangeMinActiveOffer");
 		request.unbind(entity, model, "minRangeMaxActiveOffer", "maxRangeMaxActiveOffer", "avgRangeMaxActiveOffer", "stDerivationRangeMaxActiveOffer");
 		request.unbind(entity, model, "numSectorbyCompany", "sectorsbyCompany", "numSectorbyInvestor", "sectorsbyInvestor");
 		request.unbind(entity, model, "avgJobPerEmployer", "avgApplicationPerEmployer", "avgApplicationPerWorker");
-		//		request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords", "minActiveRequest", "maxActiveRequest", "avgActiveRequest", "stDerivationActiveRequest", "minRangeMinActiveOffer", "maxRangeMinActiveOffer",
-		//			"avgRangeMinActiveOffer", "stDerivationRangeMinActiveOffer", "minRangeMaxActiveOffer", "maxRangeMaxActiveOffer", "avgRangeMaxActiveOffer", "stDerivationRangeMaxActiveOffer", "numSectorbyCompany", "sectorsbyCompany", "numSectorbyInvestor",
-		//			"sectorsbyInvestor");
+		request.unbind(entity, model, "ratioJobsGroupedStatusPublished", "ratioJobsGroupedStatusDraft", "ratioApplicationsGroupedStatusPending");
+		request.unbind(entity, model, "ratioApplicationsGroupedStatusAccepted", "ratioApplicationsGroupedStatusRejected");
 
 	}
 
@@ -105,6 +104,13 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		result.setNumSectorbyInvestor(ni);
 		result.setSectorsbyInvestor(si);
+
+		result.setRatioJobsGroupedStatusPublished(this.repository.ratioJobsGroupedStatusPublished());
+		result.setRatioJobsGroupedStatusDraft(this.repository.ratioJobsGroupedStatusDraft());
+
+		result.setRatioApplicationsGroupedStatusPending(this.repository.ratioApplicationsGroupedStatusPending());
+		result.setRatioApplicationsGroupedStatusAccepted(this.repository.ratioApplicationsGroupedStatusAccepted());
+		result.setRatioApplicationsGroupedStatusRejected(this.repository.ratioApplicationsGroupedStatusRejected());
 
 		return result;
 	}

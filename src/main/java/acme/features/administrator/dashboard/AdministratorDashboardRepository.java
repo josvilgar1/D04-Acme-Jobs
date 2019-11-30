@@ -44,4 +44,18 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select avg(select count(a) from Application a where a.worker.id = w.id) from Worker w")
 	Double queryAVGApplicationPerWorker();
 
+	@Query("select 1.0*count(j)/(select count(j2) from Job j2) from Job j where j.finalMode=1")
+	Double ratioJobsGroupedStatusPublished();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Job j2) from Job j where j.finalMode=0")
+	Double ratioJobsGroupedStatusDraft();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.PENDING")
+	Double ratioApplicationsGroupedStatusPending();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.ACCEPTED")
+	Double ratioApplicationsGroupedStatusAccepted();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.REJECTED")
+	Double ratioApplicationsGroupedStatusRejected();
 }
