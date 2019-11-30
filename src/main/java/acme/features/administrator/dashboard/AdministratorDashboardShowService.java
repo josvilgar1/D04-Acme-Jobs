@@ -34,7 +34,7 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords", "minActiveRequest", "maxActiveRequest", "avgActiveRequest", "stDerivationActiveRequest", "minRangeMinActiveOffer", "maxRangeMinActiveOffer",
 			"avgRangeMinActiveOffer", "stDerivationRangeMinActiveOffer", "minRangeMaxActiveOffer", "maxRangeMaxActiveOffer", "avgRangeMaxActiveOffer", "stDerivationRangeMaxActiveOffer", "numSectorbyCompany", "sectorsbyCompany", "numSectorbyInvestor",
-			"sectorsbyInvestor");
+			"sectorsbyInvestor", "ratioJobsGroupedStatusPublished", "ratioJobsGroupedStatusDraft", "ratioApplicationsGroupedStatusPending", "ratioApplicationsGroupedStatusAccepted", "ratioApplicationsGroupedStatusRejected");
 
 	}
 
@@ -94,6 +94,13 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		result.setNumSectorbyInvestor(ni);
 		result.setSectorsbyInvestor(si);
+
+		result.setRatioJobsGroupedStatusPublished(this.repository.ratioJobsGroupedStatusPublished());
+		result.setRatioJobsGroupedStatusDraft(this.repository.ratioJobsGroupedStatusDraft());
+
+		result.setRatioApplicationsGroupedStatusPending(this.repository.ratioApplicationsGroupedStatusPending());
+		result.setRatioApplicationsGroupedStatusAccepted(this.repository.ratioApplicationsGroupedStatusAccepted());
+		result.setRatioApplicationsGroupedStatusRejected(this.repository.ratioApplicationsGroupedStatusRejected());
 
 		return result;
 	}

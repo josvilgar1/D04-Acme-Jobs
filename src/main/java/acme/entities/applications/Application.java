@@ -5,6 +5,7 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -41,6 +42,8 @@ public class Application extends DomainEntity {
 
 	//TODO: ENUM
 	//    Status (pending/accepted/rejected)
+	@Enumerated
+	private ApplicationStatus	status;
 
 	@NotBlank
 	private String				statement;

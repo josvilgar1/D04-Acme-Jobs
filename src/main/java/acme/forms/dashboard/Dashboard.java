@@ -33,4 +33,9 @@ public class Dashboard implements Serializable {
 	List<Integer>				numSectorbyInvestor;
 	List<String>				sectorsbyInvestor;
 	//Object[]					InvestorsSectors;
+	Double						ratioJobsGroupedStatusPublished;
+	Double						ratioJobsGroupedStatusDraft;
+	Double						ratioApplicationsGroupedStatusPending;
+	Double						ratioApplicationsGroupedStatusAccepted;
+	Double						ratioApplicationsGroupedStatusRejected;
 }

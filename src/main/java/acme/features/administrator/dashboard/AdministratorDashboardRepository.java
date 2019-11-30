@@ -33,4 +33,18 @@ public interface AdministratorDashboardRepository extends AbstractRepository {
 	@Query("select min(r.rangeMax.amount),max(r.rangeMax.amount),avg(r.rangeMax.amount),stddev(r.rangeMax.amount) from Offer r where r.deadline > current_timestamp()")
 	Double[][] queryRangeMaxActiveOffer();
 
+	@Query("select 1.0*count(j)/(select count(j2) from Job j2) from Job j where j.finalMode=1")
+	Double ratioJobsGroupedStatusPublished();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Job j2) from Job j where j.finalMode=0")
+	Double ratioJobsGroupedStatusDraft();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.PENDING")
+	Double ratioApplicationsGroupedStatusPending();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.ACCEPTED")
+	Double ratioApplicationsGroupedStatusAccepted();
+
+	@Query("select 1.0*count(j)/(select count(j2) from Application j2) from Application j where j.status=acme.entities.applications.ApplicationStatus.REJECTED")
+	Double ratioApplicationsGroupedStatusRejected();
 }
