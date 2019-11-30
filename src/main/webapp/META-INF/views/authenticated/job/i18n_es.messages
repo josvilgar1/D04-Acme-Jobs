@@ -1,0 +1,16 @@
+#List-tags-----------------------------------------------------------------
+authenticated.job.list.label.title = Título
+authenticated.job.list.label.salary = Salario
+authenticated.job.list.label.deadline = Fecha límite
+authenticated.job.list.label.description = Descripción
+
+#Form-tags-----------------------------------------------------------------
+authenticated.job.form.label.reference = Referencia
+authenticated.job.form.label.title = Titulo
+authenticated.job.form.label.deadline = Fecha límite
+authenticated.job.form.label.salary = Salario
+authenticated.job.form.label.moreInfo = Mas información
+authenticated.job.form.label.description = Descripción
+
+#Buttons-------------------------------------------------------------------
+authenticated.job.form.button.return = Volver

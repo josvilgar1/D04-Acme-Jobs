@@ -25,6 +25,7 @@ administrator.dashboard.form.lable.minRangeMaxActiveOffer = Minimum maximum rewa
 administrator.dashboard.form.lable.maxRangeMaxActiveOffer = Maximum maximum reward of the active offers
 administrator.dashboard.form.lable.avgRangeMaxActiveOffer = Average of the maximum rewards of the active offers
 administrator.dashboard.form.lable.stDerivationRangeMaxActiveOffer = Standard deviation of the minimum rewards of the active offers
+
 administrator.dashboard.form.lable.ratiojobsgroupedstatus = Ratios Jobs grouped by status
 administrator.dashboard.form.lable.ratiojobsgroupedstatus.published = Published
 administrator.dashboard.form.lable.ratiojobsgroupedstatus.draft = Draft
@@ -32,4 +33,9 @@ administrator.dashboard.form.lable.ratioapplicationsgroupedstatus = Ratios Appli
 administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.pending = Pending
 administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.accepted = Accepted
 administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.rejected = Rejected
+
+administrator.dashboard.form.lable.avgJobPerEmployer = Average number of jobs per employer
+administrator.dashboard.form.lable.avgApplicationPerEmployer = Average number of applications per employer
+administrator.dashboard.form.lable.avgApplicationPerWorker = Average number of applications per worker
+
 administrator.dashboard.form.button.return = Return

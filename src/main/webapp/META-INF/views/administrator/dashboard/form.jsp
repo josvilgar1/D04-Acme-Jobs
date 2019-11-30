@@ -216,6 +216,10 @@
 	<acme:form-textbox code="administrator.dashboard.form.lable.maxRangeMaxActiveOffer" path="maxRangeMaxActiveOffer" />
 	<acme:form-textbox code="administrator.dashboard.form.lable.avgRangeMaxActiveOffer" path="avgRangeMaxActiveOffer" />
 	<acme:form-textbox code="administrator.dashboard.form.lable.stDerivationRangeMaxActiveOffer" path="stDerivationRangeMaxActiveOffer" />
+	
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgJobPerEmployer" path="avgJobPerEmployer" />
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgApplicationPerEmployer" path="avgApplicationPerEmployer" />
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgApplicationPerWorker" path="avgApplicationPerWorker" />
 
 	<acme:form-return code="administrator.dashboard.form.button.return" />
 </acme:form>
