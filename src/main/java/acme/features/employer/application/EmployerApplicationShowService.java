@@ -1,21 +1,21 @@
 
-package acme.features.worker;
+package acme.features.employer.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import acme.entities.applications.Application;
-import acme.entities.roles.Worker;
+import acme.entities.roles.Employer;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.entities.Principal;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class WorkerApplicationShowService implements AbstractShowService<Worker, Application> {
+public class EmployerApplicationShowService implements AbstractShowService<Employer, Application> {
 
 	@Autowired
-	WorkerApplicationRepository repository;
+	EmployerApplicationRepository repository;
 
 
 	@Override
@@ -23,17 +23,17 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		assert request != null;
 
 		boolean result;
-		int applicationId;
+		int ApplicationId;
 		Application application;
-		Worker worker;
+		Employer employer;
 		Principal principal;
 
-		applicationId = request.getModel().getInteger("id");
-		application = this.repository.findOneJobById(applicationId);
+		ApplicationId = request.getModel().getInteger("id");
+		application = this.repository.findOneApplicationById(ApplicationId);
 
-		worker = application.getWorker();
+		employer = application.getJob().getEmployer();
 		principal = request.getPrincipal();
-		result = worker.getUserAccount().getId() == principal.getAccountId();
+		result = employer.getUserAccount().getId() == principal.getAccountId();
 
 		return result;
 	}
@@ -57,7 +57,7 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneJobById(id);
+		result = this.repository.findOneApplicationById(id);
 		return result;
 	}
 

@@ -25,7 +25,7 @@ public interface AuthenticatedEmployerRepository extends AbstractRepository {
 	@Query("select ua from UserAccount ua where ua.id = ?1")
 	UserAccount findOneUserAccountById(int id);
 
-	@Query("select c from Consumer c where c.userAccount.id = ?1")
+	@Query("select e from Employer e where e.userAccount.id = ?1")
 	Employer findOneEmployerByUserAccountId(int id);
 
 }

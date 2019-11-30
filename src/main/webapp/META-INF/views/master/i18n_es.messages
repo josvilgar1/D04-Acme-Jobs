@@ -80,6 +80,7 @@ master.menu.worker.aplication.list = Trabajos aplicados
 
 master.menu.employer = Empleado
 master.menu.employer.job.list = Trabajos publicados
+master.menu.employer.application.list = Solicitudes a mis trabajos
 
 # master.menu.auditor ##########################################################
 

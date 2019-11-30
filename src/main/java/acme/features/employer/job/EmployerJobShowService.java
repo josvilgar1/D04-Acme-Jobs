@@ -1,5 +1,5 @@
 
-package acme.features.employer;
+package acme.features.employer.job;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,10 @@ public class EmployerJobShowService implements AbstractShowService<Employer, Job
 		jobId = request.getModel().getInteger("id");
 		job = this.repository.findOneJobById(jobId);
 
-		return false;
+		employer = job.getEmployer();
+		principal = request.getPrincipal();
+		result = employer.getUserAccount().getId() == principal.getAccountId();
+		return result;
 	}
 
 	@Override
