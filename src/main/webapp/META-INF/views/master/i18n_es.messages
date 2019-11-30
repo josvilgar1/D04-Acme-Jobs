@@ -59,6 +59,7 @@ master.menu.authenticated.announcement = Listar anuncios
 master.menu.authenticated.challenge.active = Listar retos activos
 master.menu.authenticated.request.active = Listar solicitudes activas
 master.menu.authenticated.investorrecords = Listar archivos de inversionistas
+master.menu.authenticated.job.active = Listar trabajos activos
 
 # master.menu.provider ########################################################
 

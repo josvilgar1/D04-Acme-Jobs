@@ -470,7 +470,7 @@
 	<!-- Job03 -->	
 	
 	<bean id="job03" class="acme.entities.jobs.Job">
-		<property name="deadline" value="2020/02/1 10:00"/>
+		<property name="deadline" value="2019/02/1 10:00"/>
 		<property name="reference" value="EE03-JJ03"/>
 		<property name="title" value="Title03"/>
 		<property name="salary" value="300€"/>
@@ -483,7 +483,7 @@
 	<!-- Job02 -->	
 	
 	<bean id="job02" class="acme.entities.jobs.Job">
-		<property name="deadline" value="2019/11/1 10:00"/>
+		<property name="deadline" value="2022/11/1 10:00"/>
 		<property name="reference" value="EE02-JJ02"/>
 		<property name="title" value="Title02"/>
 		<property name="salary" value="200€"/>
@@ -496,7 +496,7 @@
 	<!-- Job01 -->	
 	
 	<bean id="job01" class="acme.entities.jobs.Job">
-		<property name="deadline" value="2019/11/1 10:00"/>
+		<property name="deadline" value="2022/11/1 10:00"/>
 		<property name="reference" value="EE01-JJ01"/>
 		<property name="title" value="Title01"/>
 		<property name="salary" value="100€"/>
