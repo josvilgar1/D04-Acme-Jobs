@@ -1,5 +1,5 @@
 
-package acme.features.employer;
+package acme.features.worker;
 
 import javax.annotation.PostConstruct;
 
@@ -8,30 +8,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.components.CustomCommand;
-import acme.entities.jobs.Job;
-import acme.entities.roles.Employer;
+import acme.entities.applications.Application;
+import acme.entities.roles.Worker;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("/employer/job/")
-public class EmployerJobController extends AbstractController<Employer, Job> {
+@RequestMapping("/worker/application/")
+public class WorkerApplicationController extends AbstractController<Worker, Application> {
 
 	@Autowired
-	private EmployerJobListMineService	listService;
-
-	//@Autowired
-	//private EmployerJobListAplicatedService	listAplicatedService;
+	private WorkerApplicationListMineService	listService;
 
 	@Autowired
-	private EmployerJobShowService		showService;
+	private WorkerApplicationShowService		showService;
 
 
 	@PostConstruct
 	private void initialise() {
 		super.addCustomCommand(CustomCommand.LIST_MINE, BasicCommand.LIST, this.listService);
 		super.addBasicCommand(BasicCommand.SHOW, this.showService);
-		//super.addCustomCommand(CustomCommand.LIST_APLICATED, BasicCommand.LIST, this.listActiveService);
 	}
 
 }
