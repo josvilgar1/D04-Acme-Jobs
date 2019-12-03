@@ -8,6 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+employer.job.form.label.employer.fullname=Nombre completo del empleador
+
 employer.list.job.label.reference = Referencia
 employer.list.job.label.deadline = Fecha Límite
 employer.list.job.label.title = Título

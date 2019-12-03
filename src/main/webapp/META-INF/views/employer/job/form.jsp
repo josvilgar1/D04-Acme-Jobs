@@ -4,6 +4,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
+	<acme:form-textbox code="employer.job.form.label.employer.fullname" path="employer.identity.fullName"/>
 	<acme:form-textbox code="employer.job.form.label.reference" path="reference"/>
 	<acme:form-textbox code="employer.job.form.label.title" path="title"/>
 	<acme:form-moment code="employer.job.form.label.deadline" path="moment"/>

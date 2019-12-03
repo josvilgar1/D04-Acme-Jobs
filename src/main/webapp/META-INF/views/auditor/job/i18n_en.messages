@@ -8,6 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+auditor.job.form.label.employer.fullname=Employer's full name
+
 auditor.job.list.label.title=Title
 auditor.job.list.label.salary=Salary
 auditor.job.list.label.deadline=Deadline

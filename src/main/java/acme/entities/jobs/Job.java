@@ -46,6 +46,8 @@ public class Job extends DomainEntity {
 	@Valid
 	private Money				salary;
 
+	@NotBlank
+	@Length(max = 1200)
 	private String				description;
 
 	@URL

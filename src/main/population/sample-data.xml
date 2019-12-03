@@ -101,12 +101,6 @@
 	<bean name="sponsor01Sponsor" class="acme.entities.roles.Sponsor">
 		<property name="userAccount" ref="sponsor01UserAccount" />
 		<property name="organizationName" value="organizationName01" />
-		<property name="creditCardName" value="Nombre1Apellido1Apellido2"/>
-		<property name="creditCardNumber" value="1111222233334444"/>
-		<property name="creditCardMonth" value="12"/>
-		<property name="creditCardYear" value="2023"/>
-		<property name="creditCardType" value="Visa"/>
-		<property name="creditCardCVV" value="330"/>
 	</bean>
 	
 	<bean name="sponsor01Authenticated" class="acme.framework.entities.Authenticated">
@@ -458,10 +452,10 @@
 	
 	<bean id="job04" class="acme.entities.jobs.Job">
 		<property name="deadline" value="2020/02/1 10:00"/>
-		<property name="reference" value="EE03-JJ04"/>
+		<property name="reference" value="EE01-JJ04"/>
 		<property name="title" value="Title04"/>
 		<property name="salary" value="400€"/>
-		<property name="description"><null/></property>
+		<property name="description" value="description04"/>
 		<property name="moreInfo"><null/></property>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer01Employer"/>
@@ -474,7 +468,7 @@
 		<property name="reference" value="EE03-JJ03"/>
 		<property name="title" value="Title03"/>
 		<property name="salary" value="300€"/>
-		<property name="description"><null/></property>
+		<property name="description" value="description03"/>
 		<property name="moreInfo"><null/></property>
 		<property name="finalMode" value="false"/>
 		<property name="employer" ref="employer03Employer"/>

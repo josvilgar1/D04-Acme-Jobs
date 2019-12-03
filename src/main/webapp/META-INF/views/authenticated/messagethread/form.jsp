@@ -16,6 +16,7 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+	<acme:form-textbox code="authenticated.messagethread.form.lable.owner.identity.fullName" path="owner.identity.fullName"/>
 	<acme:form-textbox code="authenticated.messagethread.form.lable.title" path="title"/>
 	<acme:form-moment code="authenticated.messagethread.form.lable.creationMoment" path="creationMoment"/>
 	

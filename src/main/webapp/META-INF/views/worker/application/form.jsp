@@ -16,6 +16,8 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form readonly="true">
+	<acme:form-textbox code="worker.application.form.lable.job.employer.identity.fullName" path="job.employer.identity.fullName"/>
+	<acme:form-textbox code="worker.application.form.lable.job.title" path="job.title"/>
 	<acme:form-textbox code="worker.application.form.lable.referenceNumber" path="referenceNumber"/>
 	<acme:form-moment code="worker.application.form.lable.creationMoment" path="creationMoment"/>
 	<acme:form-textbox code="worker.application.form.lable.statement" path="statement"/>

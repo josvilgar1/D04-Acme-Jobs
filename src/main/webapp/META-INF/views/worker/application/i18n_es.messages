@@ -8,6 +8,9 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+worker.application.form.lable.job.employer.identity.fullName=Nombre completo del empleador
+worker.application.form.lable.job.title=Título del trabajo
+
 worker.application.list.label.referenceNumber = Número de referencia
 worker.application.list.label.statement = Declaración
 worker.application.list.label.creationMoment = Fecha de creación

@@ -8,6 +8,8 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
+authenticated.messagethread.form.lable.owner.identity.fullName=Full name of the owner
+
 authenticated.messagethread.list.label.title = Title
 authenticated.messagethread.list.label.creationMoment = Creation Moment
 
