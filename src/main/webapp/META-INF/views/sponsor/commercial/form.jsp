@@ -14,4 +14,5 @@
 	<acme:form-textbox code="sponsor.commercial.form.label.creditCardType" path="creditCardType"/>
 	
   	<acme:form-return code="sponsor.commercial.form.button.return"/>
+  	
 </acme:form>
