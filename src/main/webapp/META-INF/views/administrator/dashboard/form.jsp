@@ -107,7 +107,99 @@
 		});
 		
 	});	
-</script>							
+</script>
+<div>
+	<canvas id="canvas3"></canvas>
+</div>
+
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		
+		var data = {
+				labels:[
+					"<acme:message code="administrator.dashboard.form.lable.ratiojobsgroupedstatus.published"/>",
+					"<acme:message code="administrator.dashboard.form.lable.ratiojobsgroupedstatus.draft"/>"
+					],
+				datasets:[{	
+						label : "<acme:message code="administrator.dashboard.form.lable.ratiojobsgroupedstatus"/>",
+						data:[
+								<acme:message code="${ratioJobsGroupedStatusPublished}"/>,
+								<acme:message code="${ratioJobsGroupedStatusDraft}"/>
+						]		
+						}]
+			};
+		var options = {
+				scales:{ 
+					yAxes:[{
+							ticks:{
+									suggestedMin: 0.0,
+									suggestedMax: 4.0
+							}
+					}]
+				},
+				legend: {display : true}
+		};
+		
+		var canvas, context;
+		
+		canvas = document.getElementById("canvas3");
+		context = canvas.getContext("2d");
+		new Chart(context,{
+			type : "bar",
+			data : data,
+			options : options
+		});
+		
+	});	
+</script>
+
+<div>
+	<canvas id="canvas4"></canvas>
+</div>
+
+<script type="text/javascript"> 
+	$(document).ready(function(){
+		
+		var data = {
+				labels:[
+					"<acme:message code="administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.pending"/>",
+					"<acme:message code="administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.accepted"/>",
+					"<acme:message code="administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.rejected"/>"
+					],
+				datasets:[{	
+						label : "<acme:message code="administrator.dashboard.form.lable.ratioapplicationsgroupedstatus"/>",
+						data:[
+								<acme:message code="${ratioApplicationsGroupedStatusPending}"/>,
+								<acme:message code="${ratioApplicationsGroupedStatusAccepted}"/>,
+								<acme:message code="${ratioApplicationsGroupedStatusRejected}"/>
+						]		
+						}]
+			};
+		var options = {
+				scales:{ 
+					yAxes:[{
+							ticks:{
+									suggestedMin: 0.0,
+									suggestedMax: 4.0
+							}
+					}]
+				},
+				legend: {display : true}
+		};
+		
+		var canvas, context;
+		
+		canvas = document.getElementById("canvas4");
+		context = canvas.getContext("2d");
+		new Chart(context,{
+			type : "bar",
+			data : data,
+			options : options
+		});
+		
+	});	
+</script>								
+							
 <acme:form readonly="true">
 	<acme:form-textbox code="administrator.dashboard.form.lable.countAnnouncement" path="countAnnouncement" />
 	<acme:form-textbox code="administrator.dashboard.form.lable.countCompanyRecord" path="countCompanyRecords" />
@@ -124,6 +216,10 @@
 	<acme:form-textbox code="administrator.dashboard.form.lable.maxRangeMaxActiveOffer" path="maxRangeMaxActiveOffer" />
 	<acme:form-textbox code="administrator.dashboard.form.lable.avgRangeMaxActiveOffer" path="avgRangeMaxActiveOffer" />
 	<acme:form-textbox code="administrator.dashboard.form.lable.stDerivationRangeMaxActiveOffer" path="stDerivationRangeMaxActiveOffer" />
+	
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgJobPerEmployer" path="avgJobPerEmployer" />
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgApplicationPerEmployer" path="avgApplicationPerEmployer" />
+	<acme:form-textbox code="administrator.dashboard.form.lable.avgApplicationPerWorker" path="avgApplicationPerWorker" />
 
 	<acme:form-return code="administrator.dashboard.form.button.return" />
 </acme:form>

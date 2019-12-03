@@ -2,6 +2,7 @@
 package acme.features.administrator.dashboard;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +33,14 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords", "minActiveRequest", "maxActiveRequest", "avgActiveRequest", "stDerivationActiveRequest", "minRangeMinActiveOffer", "maxRangeMinActiveOffer",
-			"avgRangeMinActiveOffer", "stDerivationRangeMinActiveOffer", "minRangeMaxActiveOffer", "maxRangeMaxActiveOffer", "avgRangeMaxActiveOffer", "stDerivationRangeMaxActiveOffer", "numSectorbyCompany", "sectorsbyCompany", "numSectorbyInvestor",
-			"sectorsbyInvestor");
+    request.unbind(entity, model, "countAnnouncement", "countCompanyRecords", "countInvestorRecords");
+		request.unbind(entity, model, "minActiveRequest", "maxActiveRequest", "avgActiveRequest", "stDerivationActiveRequest");
+		request.unbind(entity, model, "minRangeMinActiveOffer", "maxRangeMinActiveOffer", "avgRangeMinActiveOffer", "stDerivationRangeMinActiveOffer");
+		request.unbind(entity, model, "minRangeMaxActiveOffer", "maxRangeMaxActiveOffer", "avgRangeMaxActiveOffer", "stDerivationRangeMaxActiveOffer");
+		request.unbind(entity, model, "numSectorbyCompany", "sectorsbyCompany", "numSectorbyInvestor", "sectorsbyInvestor");
+		request.unbind(entity, model, "avgJobPerEmployer", "avgApplicationPerEmployer", "avgApplicationPerWorker");
+		request.unbind(entity, model, "ratioJobsGroupedStatusPublished", "ratioJobsGroupedStatusDraft", "ratioApplicationsGroupedStatusPending");
+		request.unbind(entity, model, "ratioApplicationsGroupedStatusAccepted", "ratioApplicationsGroupedStatusRejected");
 
 	}
 
@@ -48,20 +54,24 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 		result.setCountCompanyRecords(this.repository.countCompanyRecord());
 		result.setCountInvestorRecords(this.repository.countInvestorRecords());
 
-		result.setMinActiveRequest(this.repository.queryActiveRequest()[0][0]);
-		result.setMaxActiveRequest(this.repository.queryActiveRequest()[0][1]);
-		result.setAvgActiveRequest(this.repository.queryActiveRequest()[0][2]);
-		result.setStDerivationActiveRequest(this.repository.queryActiveRequest()[0][3]);
+		result.setMinActiveRequest(this.repository.queryActiveRequest(new Date())[0][0]);
+		result.setMaxActiveRequest(this.repository.queryActiveRequest(new Date())[0][1]);
+		result.setAvgActiveRequest(this.repository.queryActiveRequest(new Date())[0][2]);
+		result.setStDerivationActiveRequest(this.repository.queryActiveRequest(new Date())[0][3]);
 
-		result.setMinRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer()[0][0]);
-		result.setMaxRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer()[0][1]);
-		result.setAvgRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer()[0][2]);
-		result.setStDerivationRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer()[0][3]);
+		result.setMinRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer(new Date())[0][0]);
+		result.setMaxRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer(new Date())[0][1]);
+		result.setAvgRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer(new Date())[0][2]);
+		result.setStDerivationRangeMinActiveOffer(this.repository.queryRangeMinActiveOffer(new Date())[0][3]);
 
-		result.setMinRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer()[0][0]);
-		result.setMaxRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer()[0][1]);
-		result.setAvgRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer()[0][2]);
-		result.setStDerivationRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer()[0][3]);
+		result.setMinRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer(new Date())[0][0]);
+		result.setMaxRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer(new Date())[0][1]);
+		result.setAvgRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer(new Date())[0][2]);
+		result.setStDerivationRangeMaxActiveOffer(this.repository.queryRangeMaxActiveOffer(new Date())[0][3]);
+
+		result.setAvgJobPerEmployer(this.repository.queryAVGJobPerEmployer());
+		result.setAvgApplicationPerEmployer(this.repository.queryAVGApplicationPerEmployer());
+		result.setAvgApplicationPerWorker(this.repository.queryAVGApplicationPerWorker());
 
 		Object[] sectorescompany = this.repository.sectorspercompany();
 
@@ -94,6 +104,13 @@ public class AdministratorDashboardShowService implements AbstractShowService<Ad
 
 		result.setNumSectorbyInvestor(ni);
 		result.setSectorsbyInvestor(si);
+
+		result.setRatioJobsGroupedStatusPublished(this.repository.ratioJobsGroupedStatusPublished());
+		result.setRatioJobsGroupedStatusDraft(this.repository.ratioJobsGroupedStatusDraft());
+
+		result.setRatioApplicationsGroupedStatusPending(this.repository.ratioApplicationsGroupedStatusPending());
+		result.setRatioApplicationsGroupedStatusAccepted(this.repository.ratioApplicationsGroupedStatusAccepted());
+		result.setRatioApplicationsGroupedStatusRejected(this.repository.ratioApplicationsGroupedStatusRejected());
 
 		return result;
 	}

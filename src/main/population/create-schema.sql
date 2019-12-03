@@ -31,6 +31,7 @@
         `reference_number` varchar(255),
         `skills` varchar(255),
         `statement` varchar(255),
+        `status` integer,
         `job_id` integer not null,
         `worker_id` integer not null,
         primary key (`id`)

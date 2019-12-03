@@ -50,6 +50,7 @@ master.menu.administrator.commercial = Commercial banners
 master.menu.administrator.nonCommercial = Non commercial banners
 
 # master.menu.authenticated ###################################################
+
 master.menu.authenticated = Authenticated
 master.menu.authenticated.companyrecord = Company records
 master.menu.authenticated.offer.active = List Active Offers
@@ -58,6 +59,8 @@ master.menu.authenticated.announcement = List announcements
 master.menu.authenticated.challenge.active = List active challenges
 master.menu.authenticated.request.active = List active requests
 master.menu.authenticated.investorrecords = List investor records
+master.menu.authenticated.messagethread.mine = List Mine MessageThread
+master.menu.authenticated.job.active = List active jobs
 
 # master.menu.provider ########################################################
 
@@ -70,11 +73,30 @@ master.menu.provider.request.create = New request
 master.menu.consumer = Consumer
 master.menu.consumer.create = New offer
 
+
 # master.menu.sponsor #########################################################
 
 master.menu.sponsor = Sponsor
 master.menu.sponsor.commercial.list = Commercial banners
 master.menu.sponsor.noncommercial.list = Non commercial banners
+
+# master.menu.worker ######################################################
+
+master.menu.worker = Worker
+master.menu.worker.aplication.list = Aplicated Jobs
+
+# master.menu.employer ########################################################
+
+master.menu.employer = Employer
+master.menu.employer.job.list = Publicated jobs
+master.menu.employer.application.list = Applications to my jobs
+
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list.has.auditrecord = Jobs with audit record
+master.menu.auditor.list.not.has.auditrecord = Jobs without audit record
+
 
 # master.menu.user-account ####################################################
 
@@ -84,6 +106,10 @@ master.menu.user-account.provider = Provider data
 master.menu.user-account.become-provider = Become a provider
 master.menu.user-account.consumer = Consumer data
 master.menu.user-account.become-consumer = Become a consumer
+master.menu.user-account.become-worker = Become a worker
+master.menu.user-account.worker = Worker data
+master.menu.user-account.become-employer = Become a employer
+master.menu.user-account.employer = Employer
 
 # master.footer ###############################################################
 

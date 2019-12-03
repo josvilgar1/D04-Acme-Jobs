@@ -25,4 +25,17 @@ administrator.dashboard.form.lable.minRangeMaxActiveOffer = Mínima recompensa m
 administrator.dashboard.form.lable.maxRangeMaxActiveOffer = Máxima recompensa máxima de las ofertas activas
 administrator.dashboard.form.lable.avgRangeMaxActiveOffer = Media de las recompensas máximas de las ofertas activas
 administrator.dashboard.form.lable.stDerivationRangeMaxActiveOffer = Desviación Estándar de las recompensas máximas de las ofertas activas
+
+administrator.dashboard.form.lable.ratiojobsgroupedstatus = Ratio Trabajos agrupado por estado
+administrator.dashboard.form.lable.ratiojobsgroupedstatus.published = Publicado
+administrator.dashboard.form.lable.ratiojobsgroupedstatus.draft = Borrador
+administrator.dashboard.form.lable.ratioapplicationsgroupedstatus = Ratios Aplicaciones agrupados por estado
+administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.pending = Pendiente
+administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.accepted = Aceptado
+administrator.dashboard.form.lable.ratioapplicationsgroupedstatus.rejected = Rechazado
+
+administrator.dashboard.form.lable.avgJobPerEmployer = Número promedio de trabajos por empleador
+administrator.dashboard.form.lable.avgApplicationPerEmployer = Número promedio de solicitudes por empleador
+administrator.dashboard.form.lable.avgApplicationPerWorker = Número promedio de solicitudes por trabajador
+
 administrator.dashboard.form.button.return = Volver
