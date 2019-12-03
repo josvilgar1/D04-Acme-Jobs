@@ -73,6 +73,13 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
+
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor = Patrocinador
+master.menu.sponsor.commercial.list = Anuncios comerciales
+master.menu.sponsor.noncommercial.list = Anuncios no comerciales
+
 # master.menu.worker ######################################################
 
 master.menu.worker = Trabajador
@@ -89,6 +96,7 @@ master.menu.employer.application.list = Solicitudes a mis trabajos
 master.menu.auditor = Auditor
 master.menu.auditor.list.has.auditrecord = Trabajos con registro de auditoría
 master.menu.auditor.list.not.has.auditrecord = Trabajos sin registro de auditoría
+
 
 # master.menu.user-account ####################################################
 

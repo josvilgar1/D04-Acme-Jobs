@@ -1,0 +1,13 @@
+#Form-tags----------------------------------------------------------------------
+
+sponsor.noncommercial.form.label.picture = Picture
+sponsor.noncommercial.form.label.slogan = Slogan
+sponsor.noncommercial.form.label.url = URL
+sponsor.noncommercial.form.label.jingle = Jingle
+
+sponsor.noncommercial.form.button.return = Return
+
+#List-tags----------------------------------------------------------------------
+sponsor.noncommercial.list.label.slogan = Slogan
+sponsor.noncommercial.list.label.picture = Picture
+sponsor.noncommercial.list.label.url = URL

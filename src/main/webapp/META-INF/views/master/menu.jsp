@@ -68,6 +68,11 @@
 			<acme:menu-suboption code="master.menu.consumer.create" action="/consumer/offer/create"/>
 		</acme:menu-option>
 		
+
+		<acme:menu-option code="master.menu.sponsor" access="hasRole('Sponsor')">
+			<acme:menu-suboption code="master.menu.sponsor.commercial.list" action="/sponsor/commercial/list-mine"/>
+			<acme:menu-suboption code="master.menu.sponsor.noncommercial.list" action="/sponsor/noncommercial/list-mine"/>
+
 		<acme:menu-option code="master.menu.worker" access="hasRole('Worker')">
 			<acme:menu-suboption code="master.menu.worker.aplication.list" action="/worker/application/list-mine"/>
     	</acme:menu-option>
@@ -80,6 +85,7 @@
 		<acme:menu-option code="master.menu.auditor" access="hasRole('Auditor')">
 			<acme:menu-suboption code="master.menu.auditor.list.has.auditrecord" action="/auditor/job/list-has-auditrecord"/>
 			<acme:menu-suboption code="master.menu.auditor.list.not.has.auditrecord" action="/auditor/job/list-not-has-auditrecord"/>
+
 		</acme:menu-option>
 		
 	</acme:menu-left>
