@@ -10,5 +10,9 @@
 	<acme:form-textbox code="employer.application.form.lable.skills" path="skills"/>
 	<acme:form-textbox code="employer.application.form.lable.qualifications" path="qualifications"/>
   	
+  	<acme:form-submit 
+		method="get" 
+		code="employer.application.form.button.job" 
+		action="/employer/job/show?id=${job.id}"/>
   	<acme:form-return code="employer.application.form.button.return"/>
 </acme:form>

@@ -13,4 +13,5 @@ authenticated.auditrecord.form.label.body = Body
 
 #Buttons-------------------------------------------------------------------
 authenticated.auditrecord.form.button.job = Job
+authenticated.auditrecord.form.button.auditor = Auditor
 authenticated.auditrecord.form.button.return = Return

@@ -17,5 +17,7 @@ employer.application.form.lable.creationMoment = Fecha de creación
 employer.application.form.lable.statement =
 employer.application.form.lable.skills = Habilidades
 employer.application.form.lable.qualifications = Cualificaciones
+
+employer.application.form.button.job = Trabajo
 employer.application.form.button.return = Volver
 

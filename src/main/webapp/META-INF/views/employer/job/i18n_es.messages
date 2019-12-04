@@ -20,5 +20,8 @@ employer.job.form.label.deadline = Fecha Límite
 employer.job.form.label.salary = Salario
 employer.job.form.label.moreInfo = Más Info
 employer.job.form.label.description = Descripción
+employer.job.form.label.finalmode = Publicado
 
+employer.job.form.button.duty = Tareas
+employer.job.form.button.auditrecord = Registro de auditorias
 employer.job.form.button.return = Volver

@@ -18,3 +18,5 @@ authenticated.messagethread.form.lable.creationMoment = Creation Moment
 
 authenticated.messagethread.form.button.return = Return
 authenticated.messagethread.form.button.message = Message
+authenticated.messagethread.form.button.authenticated.list = List Auditor
+authenticated.messagethread.form.button.authenticated.show = Show Owner

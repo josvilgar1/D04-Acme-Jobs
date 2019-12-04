@@ -1,0 +1,14 @@
+#List-tags-----------------------------------------------------------------
+employer.duty.list.label.title = Title
+employer.duty.list.label.percentageOfTime = Percentage of time
+employer.duty.list.label.description = Description
+
+#Form-tags-----------------------------------------------------------------
+employer.duty.form.label.job.reference = Job reference
+employer.duty.form.label.title = Title
+employer.duty.form.label.percentageOfTime = Percentage of time
+employer.duty.form.label.description = Description
+
+#Buttons-------------------------------------------------------------------
+employer.duty.form.button.job = Job
+employer.duty.form.button.return = Return

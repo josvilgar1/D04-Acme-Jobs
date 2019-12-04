@@ -9,6 +9,7 @@
 # they accept any liabilities with respect to them.
 
 auditor.job.form.label.employer.fullname=Nombre completo del empleador
+auditor.job.form.label.employer.show=Mostrar Empleado
 
 auditor.job.list.label.title=Título
 auditor.job.list.label.salary=Salario
@@ -23,6 +24,6 @@ auditor.job.form.label.moreInfo=Mas información
 auditor.job.form.label.finalMode=Borrador
 
 auditor.job.form.button.return=Volver
-
-
-
+auditor.job.form.button.auditrecord.list=Listar Registros de auditoría
+auditor.job.form.button.duty.list=List Deberes
+auditor.job.form.button.employer.show=Mostrar Empleado

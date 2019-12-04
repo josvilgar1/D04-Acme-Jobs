@@ -14,5 +14,9 @@
 		method="get" 
 		code="authenticated.auditrecord.form.button.job" 
 		action="/authenticated/job/show?id=${job.id}"/>
+	<acme:form-submit 
+		method="get" 
+		code="authenticated.auditrecord.form.button.auditor" 
+		action="/authenticated/auditor/show-by-auditrecord?id=${id}"/>
   	<acme:form-return code="authenticated.auditrecord.form.button.return"/>
 </acme:form>
