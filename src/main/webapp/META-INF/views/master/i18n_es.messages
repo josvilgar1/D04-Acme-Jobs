@@ -59,6 +59,8 @@ master.menu.authenticated.announcement = Listar anuncios
 master.menu.authenticated.challenge.active = Listar retos activos
 master.menu.authenticated.request.active = Listar solicitudes activas
 master.menu.authenticated.investorrecords = Listar archivos de inversionistas
+master.menu.authenticated.messagethread.mine = Listar Hilo Mensajes involucrado
+master.menu.authenticated.job.active = Listar trabajos activos
 
 # master.menu.provider ########################################################
 
@@ -71,6 +73,31 @@ master.menu.provider.request.create = Nueva solicitud
 master.menu.consumer = Consumidor
 master.menu.consumer.create = Nueva oferta
 
+
+# master.menu.sponsor #########################################################
+
+master.menu.sponsor = Patrocinador
+master.menu.sponsor.commercial.list = Anuncios comerciales
+master.menu.sponsor.noncommercial.list = Anuncios no comerciales
+
+# master.menu.worker ######################################################
+
+master.menu.worker = Trabajador
+master.menu.worker.aplication.list = Trabajos aplicados
+
+# master.menu.employer ########################################################
+
+master.menu.employer = Empleado
+master.menu.employer.job.list = Trabajos publicados
+master.menu.employer.application.list = Solicitudes a mis trabajos
+
+# master.menu.auditor ##########################################################
+
+master.menu.auditor = Auditor
+master.menu.auditor.list.has.auditrecord = Trabajos con registro de auditoría
+master.menu.auditor.list.not.has.auditrecord = Trabajos sin registro de auditoría
+
+
 # master.menu.user-account ####################################################
 
 master.menu.user-account = Cuenta
@@ -79,8 +106,12 @@ master.menu.user-account.provider = Datos de proveedor
 master.menu.user-account.become-provider = Hazte proveedor
 master.menu.user-account.consumer = Datos de consumidor
 master.menu.user-account.become-consumer = Hazte consumidor
+master.menu.user-account.become-worker = Hazte trabajador
+master.menu.user-account.worker = Datos de trabajador
+master.menu.user-account.become-employer = Hazte empleado
+master.menu.user-account.employer = Datos de empleado
 
-﻿# master.footer ###############################################################
+# master.footer ###############################################################
 
 master.footer.title.about = Nosotros
 master.footer.label.company = La empresa

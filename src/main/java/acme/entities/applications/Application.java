@@ -5,7 +5,10 @@ import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Enumerated;
+import javax.persistence.Index;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
@@ -24,6 +27,9 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+@Table(indexes = {
+	@Index(columnList = "status")
+})
 public class Application extends DomainEntity {
 
 	private static final long	serialVersionUID	= 1L;
@@ -41,8 +47,11 @@ public class Application extends DomainEntity {
 
 	//TODO: ENUM
 	//    Status (pending/accepted/rejected)
+	@Enumerated
+	private ApplicationStatus	status;
 
 	@NotBlank
+	@Length(max = 1200)
 	private String				statement;
 
 	@NotBlank
