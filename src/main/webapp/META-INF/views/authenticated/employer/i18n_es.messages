@@ -11,6 +11,9 @@
 authenticated.employer.employer.form.title.create = Hazte empleado
 authenticated.employer.employer.form.title.update = Actualiza tus datos de empleado
 
+authenticated.employer.employer.form.label.userIdentity.fullName = Nombre completo
+authenticated.employer.employer.form.label.userIdentity.email = Email
+
 authenticated.employer.employer.form.label.company = Compañía
 authenticated.employer.employer.form.label.sector = Sector
 
