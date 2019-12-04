@@ -133,7 +133,7 @@
 					yAxes:[{
 							ticks:{
 									suggestedMin: 0.0,
-									suggestedMax: 4.0
+									suggestedMax: 1.0
 							}
 					}]
 				},
@@ -180,7 +180,7 @@
 					yAxes:[{
 							ticks:{
 									suggestedMin: 0.0,
-									suggestedMax: 4.0
+									suggestedMax: 1.0
 							}
 					}]
 				},
