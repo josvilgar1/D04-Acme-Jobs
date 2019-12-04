@@ -18,22 +18,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import acme.components.CustomCommand;
 import acme.entities.roles.Employer;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("/authenticated/employer/")
+@RequestMapping("authenticated/employer")
 public class AuthenticatedEmployerController extends AbstractController<Authenticated, Employer> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedEmployerCreateService	createService;
+	private AuthenticatedEmployerCreateService		createService;
 
 	@Autowired
-	private AuthenticatedEmployerUpdateService	updateService;
+	private AuthenticatedEmployerUpdateService		updateService;
+
+	@Autowired
+	private AuthenticatedEmployerShowByJobService	showByJobService;
 
 
 	// Constructors -----------------------------------------------------------
@@ -42,6 +46,7 @@ public class AuthenticatedEmployerController extends AbstractController<Authenti
 	private void initialise() {
 		super.addBasicCommand(BasicCommand.CREATE, this.createService);
 		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
+		super.addCustomCommand(CustomCommand.SHOW_BY_JOB, BasicCommand.SHOW, this.showByJobService);
 	}
 
 }

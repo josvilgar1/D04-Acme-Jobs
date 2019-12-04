@@ -16,6 +16,10 @@
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
 <acme:form>
+ 	<jstl:if test="${command == 'show-by-job'}">
+ 		<acme:form-textbox code="authenticated.employer.employer.form.label.userIdentity.fullName" path="identity.fullName"/>
+ 		<acme:form-textbox code="authenticated.employer.employer.form.label.userIdentity.email" path="identity.email"/>
+ 	</jstl:if>
 	<acme:form-textbox code="authenticated.employer.employer.form.label.company" path="company"/>
 	<acme:form-textbox code="authenticated.employer.employer.form.label.sector" path="sector"/>
 	
