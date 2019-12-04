@@ -15,6 +15,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
+import org.hibernate.validator.constraints.Length;
+
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
 import lombok.Getter;
@@ -42,6 +44,7 @@ public class Request extends DomainEntity {
 	private Date				deadline;
 
 	@NotBlank
+	@Length(max = 1200)
 	private String				text;
 
 	@Valid

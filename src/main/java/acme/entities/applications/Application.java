@@ -51,6 +51,7 @@ public class Application extends DomainEntity {
 	private ApplicationStatus	status;
 
 	@NotBlank
+	@Length(max = 1200)
 	private String				statement;
 
 	@NotBlank
