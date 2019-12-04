@@ -12,6 +12,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
+import org.hibernate.validator.constraints.Length;
+
 import acme.entities.jobs.Job;
 import acme.entities.roles.Auditor;
 import acme.framework.entities.DomainEntity;
@@ -38,6 +40,7 @@ public class Auditrecord extends DomainEntity {
 	private Boolean				finalMode;
 
 	@NotBlank
+	@Length(max = 1200)
 	private String				body;
 
 	//Relationships ---------------------------------------
