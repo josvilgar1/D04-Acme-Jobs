@@ -18,3 +18,5 @@ authenticated.messagethread.form.lable.creationMoment = Fecha Creación
 
 authenticated.messagethread.form.button.return = Volver
 authenticated.messagethread.form.button.message = Mensajes
+authenticated.messagethread.form.button.authenticated.list = Listar Auditores
+authenticated.messagethread.form.button.authenticated.show = Mostrar Creador
