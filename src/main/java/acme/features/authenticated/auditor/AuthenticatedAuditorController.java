@@ -1,5 +1,5 @@
 /*
- * AuthenticatedemployerController.java
+ * AuthenticatedAuditorController.java
  *
  * Copyright (c) 2019 Rafael Corchuelo.
  *
@@ -10,7 +10,7 @@
  * they accept any liabilities with respect to them.
  */
 
-package acme.features.authenticated.employer;
+package acme.features.authenticated.auditor;
 
 import javax.annotation.PostConstruct;
 
@@ -19,34 +19,26 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import acme.components.CustomCommand;
-import acme.entities.roles.Employer;
+import acme.entities.roles.Auditor;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 import acme.framework.entities.Authenticated;
 
 @Controller
-@RequestMapping("authenticated/employer")
-public class AuthenticatedEmployerController extends AbstractController<Authenticated, Employer> {
+@RequestMapping("authenticated/auditor")
+public class AuthenticatedAuditorController extends AbstractController<Authenticated, Auditor> {
 
 	// Internal state ---------------------------------------------------------
 
 	@Autowired
-	private AuthenticatedEmployerCreateService		createService;
-
-	@Autowired
-	private AuthenticatedEmployerUpdateService		updateService;
-
-	@Autowired
-	private AuthenticatedEmployerShowByJobService	showByJobService;
+	private AuthenticatedAuditorShowByAuditrecordService showByJobService;
 
 
 	// Constructors -----------------------------------------------------------
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.CREATE, this.createService);
-		super.addBasicCommand(BasicCommand.UPDATE, this.updateService);
-		super.addCustomCommand(CustomCommand.SHOW_BY_JOB, BasicCommand.SHOW, this.showByJobService);
+		super.addCustomCommand(CustomCommand.SHOW_BY_AUDITRECORD, BasicCommand.SHOW, this.showByJobService);
 	}
 
 }
