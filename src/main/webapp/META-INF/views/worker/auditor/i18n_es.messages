@@ -8,15 +8,15 @@
 # purposes.  The copyright owner does not offer any warranties or representations, nor do
 # they accept any liabilities with respect to them.
 
-worker.job.form.label.reference=Reference
-worker.job.form.label.title=Title
-worker.job.form.label.deadline=Deadline
-worker.job.form.label.salary=Salary
-worker.job.form.label.moreInfo=More info
-worker.job.form.label.description=Description
+worker.auditor.form.title.create = Hazte empleado
+worker.auditor.form.title.update = Actualiza tus datos de empleado
 
-worker.job.form.button.employer=Employer
-worker.job.form.button.duty=Duties
-worker.job.form.button.auditrecord=Audit records
+worker.auditor.form.label.userIdentity.fullName = Nombre completo
+worker.auditor.form.label.userIdentity.email = Email
 
-worker.application.form.button.return = return
+worker.auditor.form.label.firm = Firma
+worker.auditor.form.label.responsibility = Responsabilidad
+
+worker.auditor.form.button.create = Registrar
+worker.auditor.form.button.update = Actualizar
+worker.auditor.form.button.return = Volver

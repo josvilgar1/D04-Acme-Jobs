@@ -12,6 +12,6 @@
   	<acme:form-submit 
 		method="get" 
 		code="worker.duty.form.button.job" 
-		action="/worker/job/show-by-application?id=${job.id}"/>
+		action="/worker/job/show?id=${job.id}"/>
   	<acme:form-return code="worker.duty.form.button.return"/>
 </acme:form>

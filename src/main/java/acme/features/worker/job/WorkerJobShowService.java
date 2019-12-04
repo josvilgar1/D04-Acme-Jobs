@@ -11,7 +11,7 @@ import acme.framework.components.Request;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class WorkerJobShowByApplicationService implements AbstractShowService<Worker, Job> {
+public class WorkerJobShowService implements AbstractShowService<Worker, Job> {
 
 	@Autowired
 	private WorkerJobRepository repository;
@@ -41,7 +41,7 @@ public class WorkerJobShowByApplicationService implements AbstractShowService<Wo
 		int id;
 
 		id = request.getModel().getInteger("id");
-		result = this.repository.findOneByApplicationId(id);
+		result = this.repository.findOneJobById(id);
 
 		return result;
 	}

@@ -1,5 +1,5 @@
 
-package acme.features.worker.job;
+package acme.features.worker.auditor;
 
 import javax.annotation.PostConstruct;
 
@@ -7,21 +7,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import acme.entities.jobs.Job;
+import acme.components.CustomCommand;
+import acme.entities.roles.Auditor;
 import acme.entities.roles.Worker;
 import acme.framework.components.BasicCommand;
 import acme.framework.controllers.AbstractController;
 
 @Controller
-@RequestMapping("worker/job")
-public class WorkerJobController extends AbstractController<Worker, Job> {
+@RequestMapping("worker/auditor")
+public class WorkerAuditorController extends AbstractController<Worker, Auditor> {
 
 	@Autowired
-	private WorkerJobShowService showService;
+	private WorkerAuditorByAuditrecordShowService showByAuditrecordService;
 
 
 	@PostConstruct
 	private void initialise() {
-		super.addBasicCommand(BasicCommand.SHOW, this.showService);
+		super.addCustomCommand(CustomCommand.SHOW_BY_AUDITRECORD, BasicCommand.SHOW, this.showByAuditrecordService);
 	}
+
 }
