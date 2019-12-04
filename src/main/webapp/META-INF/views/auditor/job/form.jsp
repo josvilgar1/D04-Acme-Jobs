@@ -17,6 +17,13 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="auditor.job.form.label.employer.fullname" path="employer.identity.fullName"/>
+	<acme:form>
+	<acme:form-submit 
+		method="get" 
+		code="auditor.job.form.button.employer.show" 
+		action="/auditor/employer/show?id=${employer.id}"/>
+	</acme:form>
+	
 	<acme:form-moment code="auditor.job.form.label.deadline" path="deadline"/>
 	<acme:form-textbox code="auditor.job.form.label.reference" path="reference"/>
 	<acme:form-textbox code="auditor.job.form.label.title" path="title"/>
@@ -26,4 +33,16 @@
 	<acme:form-checkbox code="auditor.job.form.label.finalMode" path="finalMode"/>
 	
   	<acme:form-return code="auditor.job.form.button.return"/>
+</acme:form>
+<acme:form>
+	<acme:form-submit 
+		method="get" 
+		code="auditor.job.form.button.auditrecord.list" 
+		action="/auditor/auditrecord/list-job?id=${id}"/>
+</acme:form>
+<acme:form>
+	<acme:form-submit 
+		method="get" 
+		code="auditor.job.form.button.duty.list" 
+		action="/auditor/duty/list-job?id=${id}"/>
 </acme:form>

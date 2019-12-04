@@ -1,44 +1,43 @@
 
-package acme.features.auditor.job;
+package acme.features.auditor.auditorrecord;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import acme.entities.jobs.Job;
+import acme.entities.auditrecords.Auditrecord;
 import acme.entities.roles.Auditor;
 import acme.framework.components.Model;
 import acme.framework.components.Request;
 import acme.framework.services.AbstractShowService;
 
 @Service
-public class AuditorJobShowService implements AbstractShowService<Auditor, Job> {
+public class AuditorAuditrecordShowService implements AbstractShowService<Auditor, Auditrecord> {
 
 	@Autowired
-	AuditorJobRepository repository;
+	AuditorAuditrecordRepository repository;
 
 
 	@Override
-	public boolean authorise(final Request<Job> request) {
+	public boolean authorise(final Request<Auditrecord> request) {
 		assert request != null;
 		return true;
 	}
 
 	@Override
-	public void unbind(final Request<Job> request, final Job entity, final Model model) {
+	public void unbind(final Request<Auditrecord> request, final Auditrecord entity, final Model model) {
 		assert request != null;
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "deadline", "reference", "title", "salary", "description");
-		request.unbind(entity, model, "employer.identity.fullName", "moreInfo", "finalMode", "employer");
+		request.unbind(entity, model, "creationMoment", "title", "finalMode", "body");
 
 	}
 
 	@Override
-	public Job findOne(final Request<Job> request) {
+	public Auditrecord findOne(final Request<Auditrecord> request) {
 		assert request != null;
 
-		Job result;
+		Auditrecord result;
 		int id;
 
 		id = request.getModel().getInteger("id");
