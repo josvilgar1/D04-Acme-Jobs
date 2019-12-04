@@ -20,6 +20,16 @@
 	<acme:form-textbox code="authenticated.messagethread.form.lable.title" path="title"/>
 	<acme:form-moment code="authenticated.messagethread.form.lable.creationMoment" path="creationMoment"/>
 	
+	<acme:form-submit 
+		method="get" 
+		code="authenticated.messagethread.form.button.authenticated.show" 
+		action="/authenticated/authenticated/show?id=${owner.id}"/>
+	
+	<acme:form-submit 
+		method="get" 
+		code="authenticated.messagethread.form.button.authenticated.list" 
+		action="/authenticated/authenticated/list?id=${id}"/>
+	
   	<acme:form-return code="authenticated.messagethread.form.button.return"/>
 </acme:form>
 <acme:form>
