@@ -20,4 +20,6 @@ worker.application.form.lable.creationMoment = Creation Moment
 worker.application.form.lable.statement = Statement
 worker.application.form.lable.skills = Skills
 worker.application.form.lable.qualifications = Qualifications
+
+worker.application.form.button.job = Job
 worker.application.form.button.return = Return

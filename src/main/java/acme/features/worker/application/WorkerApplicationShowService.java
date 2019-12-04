@@ -1,5 +1,5 @@
 
-package acme.features.worker;
+package acme.features.worker.application;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -46,7 +46,7 @@ public class WorkerApplicationShowService implements AbstractShowService<Worker,
 
 		request.unbind(entity, model, "referenceNumber", "creationMoment", "statement");
 		request.unbind(entity, model, "skills", "qualifications", "job.employer.identity.fullName");
-		request.unbind(entity, model, "job.title");
+		request.unbind(entity, model, "job.title", "job");
 
 	}
 
