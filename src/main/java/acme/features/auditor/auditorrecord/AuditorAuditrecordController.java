@@ -15,7 +15,7 @@ import acme.framework.controllers.AbstractController;
 
 @Controller
 @RequestMapping("auditor/auditrecord")
-public class AuditorAuditorrecordController extends AbstractController<Auditor, Auditrecord> {
+public class AuditorAuditrecordController extends AbstractController<Auditor, Auditrecord> {
 
 	@Autowired
 	private AuditorAuditrecordShowService		showService;

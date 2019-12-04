@@ -20,3 +20,4 @@ auditor.duty.form.label.description=Descripción
 auditor.duty.form.label.percentageOfTime=Porcentaje de tiempo
 
 auditor.duty.form.button.return=Volver
+auditor.duty.form.button.job.show=Mostrar Trabajo

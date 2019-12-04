@@ -15,15 +15,9 @@
 <%@taglib prefix="jstl" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="acme" tagdir="/WEB-INF/tags"%>
 
-<acme:form readonly="true">
-	<acme:form-textbox code="auditor.duty.form.label.title" path="title"/>
-	<acme:form-textarea code="auditor.duty.form.label.description" path="description"/>
-	<acme:form-textbox code="auditor.duty.form.label.percentageOfTime" path="percentageOfTime"/>
+<acme:form>
+	<acme:form-textbox code="auditor.auditor.auditor.form.label.firm" path="firm"/>
+	<acme:form-textbox code="auditor.auditor.auditor.form.label.responsibility" path="responsibility"/>
 	
-	<acme:form-submit 
-		method="get" 
-		code="auditor.duty.form.button.job.show" 
-		action="/auditor/job/show?id=${job.id}"/>
-	
-  	<acme:form-return code="auditor.duty.form.button.return"/>
+	<acme:form-return code="auditor.auditor.auditor.form.button.return"/>
 </acme:form>

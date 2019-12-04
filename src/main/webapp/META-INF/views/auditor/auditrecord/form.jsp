@@ -17,8 +17,18 @@
 
 <acme:form readonly="true">
 	<acme:form-textbox code="auditor.auditrecord.form.label.title" path="title"/>
-	<acme:form-textarea code="auditor.auditrecord.form.label.description" path="description"/>
-	<acme:form-textarea code="auditor.auditrecord.form.label.percentageOfTime" path="percentageOfTime"/>
+	<acme:form-moment code="auditor.auditrecord.form.label.creationMoment" path="creationMoment"/>
+	<acme:form-textarea code="auditor.auditrecord.form.label.body" path="body"/>
+	
+	<acme:form-submit 
+		method="get" 
+		code="auditor.auditrecord.form.button.job.show" 
+		action="/auditor/job/show?id=${job.id}"/>
+		
+	<acme:form-submit 
+		method="get" 
+		code="auditor.auditrecord.form.button.auditor.show" 
+		action="/auditor/auditor/show?id=${auditor.id}"/>
 	
   	<acme:form-return code="auditor.auditrecord.form.button.return"/>
 </acme:form>

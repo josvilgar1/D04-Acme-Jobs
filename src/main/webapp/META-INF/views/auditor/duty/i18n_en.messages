@@ -20,3 +20,4 @@ auditor.duty.form.label.description = Description
 auditor.duty.form.label.percentageOfTime = Percentage of Time
 
 auditor.duty.form.button.return=Return
+auditor.duty.form.button.job.show=Show Job
